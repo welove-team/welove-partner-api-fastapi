@@ -118,9 +118,10 @@ JWE compact serialization 형태로 응답합니다. 복호화된 평문:
 | HTTP | error | 설명 |
 |------|-------|------|
 | 400 | `DECRYPTION_FAILED` | JWE 복호화 실패 |
-| 400 | `INVALID_REQUEST` | 필수 파라미터 누락 |
+| 400 | `INVALID` | 필수 파라미터 누락 |
 | 401 | `UNAUTHORIZED` | API Key 검증 실패 |
 | 404 | `MEMBER_NOT_FOUND` | 교인 정보 없음 |
+| 500 | `INTERNAL_ERROR` | 교회 서버 내부 오류 |
 
 ---
 

@@ -47,7 +47,7 @@ async def verify_member(request: Request) -> Response:
     except Exception:
         raise HTTPException(
             status_code=400,
-            detail={"error": "INVALID_REQUEST", "message": "요청 본문의 형식이 올바르지 않습니다."},
+            detail={"error": "INVALID", "message": "요청 본문의 형식이 올바르지 않습니다."},
         )
 
     # ─────────────────────────────────────────────────────────────
